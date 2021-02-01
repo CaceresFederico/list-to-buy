@@ -1,0 +1,101 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    min-width: 100%;
+    min-height: 15vh;
+    justify-content: center;
+    align-items: center;
+}
+
+header a, header a:hover, header a:link, header a:visited, header a:active{
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    min-height: 100vh;
+    background-color:#0e6dfc ;
+}
+
+#placehold{
+    display: flex;
+    width: 100%;
+    height: 450px;
+    align-items: center;
+    justify-content: center;
+    color: #212121;
+    text-align: center;
+}
+
+#unhappy{
+    padding-left: 0px;
+    width: 50px;
+}
+
+img{
+    padding-left: 20px;
+    width: 80px;
+}
+
+section{
+    align-items: center;
+    justify-content: center;
+}
+
+#form{
+    margin-top: 6%;
+    width: 80%;
+    border-radius: 10px;
+    background-color: white;
+    padding:20px;
+    border: 1px solid #dee2e6;
+}
+
+.form-label{
+    padding-left: 0.2rem;
+}
+
+.flex{
+    display: flex;
+}
+
+#addFixed{
+    position: fixed;
+    z-index: 99;
+    bottom: 20px;
+    right: 20px;
+    padding: 20px;
+    font-size: 20px;
+    color: #212121;
+}
+
+#item{
+    padding: 15px;
+    background-color: #212121;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#nameCol{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#expand{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#list{
+    padding-top: 20px;
+}
+
+

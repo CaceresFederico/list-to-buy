@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Federico Cáceres">
+    <meta name="copyright" content="Federico Cáceres - 2021">
+    <meta name="keywords" content="summerhack, js, html, css, to do, list, lista, desafio 3">
+    <meta name="description" content="summerhack desafio 03, lista dinámica con javascript">
+    <!-- Robots Google -->
+    <meta name="robots" content="index follow">
+    <!-- Bootstrap CSS CDN 5.0 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- Facebook meta -->
+    <meta name="og:url" content="#">
+    <meta property="og:type" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content=" " />
+    <!-- Twitter meta -->
+    <meta name="twitter:url" content="#">
+    <meta property="twitter:type" content="" />
+    <meta property="twitter:title" content="" />
+    <meta property="twitter:description" content="" />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <!-- Own css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>summerhack - 03 list</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="bg-dark flex">
+        <a href="index.html">
+            <h1>Make your list</h1>
+        </a>
+    </header>
+
+    <section>
+        <!-- Placeholder -->
+        <div class="container flex" id="placehold">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Your list its empty <img src="img/unhappy.svg" alt="unhappy svg" id="unhappy"> click
+                        in the add
+                        button to fill it.</h2>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Formulario -->
+        <div class="container d-none" id="form">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput">
+                <label for="floatingInput">Item name</label>
+            </div>
+            <div class="my-3">
+                <select class="form-select" aria-label="Categories for elements" id="options">
+                    <option value="1">Meat</option>
+                    <option value="2">Dairy products</option>
+                    <option value="3">Vegetables</option>
+                    <option value="4">Fast food</option>
+                    <option value="5">Drinks</option>
+                    <option value="6">Others</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <textarea class="form-control" id="description" rows="3" required></textarea>
+            </div>
+            <div class="container">
+                <div class="row flex">
+                    <button class="btn btn-primary" onclick="addItem()" type="submit" id="addItem">Add</button>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        </div>
+
+        <!-- Listado -->
+        <div class="container d-none" id="list">
+            <!-- Completado dinámicamente -->
+        </div>
+
+        <!-- Boton ADD fixed -->
+        <button class="btn btn-warning rounded-circle" id="addFixed" onclick="addFixed()" type="submit">add</button>
+    </section>
+
+    <!-- Own JS -->
+    <script src="js/main.js"></script>
+    <!-- Bootstrap CDN JS - Bundle 5.0 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
